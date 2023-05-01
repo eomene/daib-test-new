@@ -4,52 +4,166 @@
     <title>Daib.ai - Your Personal AI Code Assistant</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0pK"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Welcome to Daib.ai</h1>
-    <p>Your Personal AI Code Assistant</p>
+<header class="bg-primary text-white py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Welcome to Daib.ai</h1>
+                <p>Your Personal AI Code Assistant</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <a href="#signup" class="btn btn-light btn-lg">Sign up now for a free trial</a>
+            </div>
+        </div>
+    </div>
 </header>
-<section id="features">
-    <h2>Features</h2>
-    <ul>
-        <li>Real-time error detection and reporting</li>
-        <li>Code analysis and optimization</li>
-        <li>Integration with popular IDEs and code editors</li>
-        <li>Web-based interface for remote access</li>
-    </ul>
+<section id="features" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center mb-3">Features</h2>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-time error detection and reporting</h5>
+                        <p class="card-text">Daib.ai provides real-time detection and reporting of errors while coding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Code analysis and optimization</h5>
+                        <p class="card-text">Daib.ai optimizes the code and enhances its functionality by providing efficient solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Integration with popular IDEs and code editors</h5>
+                        <p class="card-text">Daib.ai integrates with popular IDEs and code editors to enhance your coding speed and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Web-based interface for remote access</h5>
+                        <p class="card-text">Daib.ai provides a web-based interface for remote access of coding facilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section id="reviews">
-  <h2>Reviews</h2>
-  <div class="review">
-    <img src="example_review_1.jpg" alt="Example Review 1" class="round-image">
-    <p>"Daib.ai has been a game-changer for my coding process. The real-time error detection has saved me countless hours of debugging."</p>
-    <p>- John, 5 stars</p>
+<section id="reviews" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <h2 class="text-center mb-3">Reviews</h2>
+          </div>
+          <div class="col-md-6 col-lg-6">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <div class="media">
+                          <img src="example_review_1.jpg" alt="Example Review 1" class="round-image align-self-center mr-3">
+                          <div class="media-body">
+                              <p class="card-text">"Daib.ai has been a game-changer for my coding process. The real-time error detection has saved me countless hours of debugging."</p>
+                              <p class="card-text">- John, 5 stars</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <div class="media">
+                          <img src="example_review_2.jpg" alt="Example Review 2" class="round-image align-self-center mr-3">
+                          <div class="media-body">
+                              <p class="card-text">"As a beginner to coding, Daib.ai has been incredibly helpful in optimizing my code and guiding me towards best practices."</p>
+                              <p class="card-text">- Emily, 4 stars</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
-  <div class="review">
-    <img src="example_review_2.jpg" alt="Example Review 2" class="round-image">
-    <p>"As a beginner to coding, Daib.ai has been incredibly helpful in optimizing my code and guiding me towards best practices."</p>
-    <p>- Emily, 4 stars</p>
+</section>
+<section id="products" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <h2 class="text-center mb-3">Products that use Daib.ai:</h2>
+          </div>
+          <div class="col-md-4 col-lg-4">
+              <div class="card h-100 text-center">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                      <img src="github_logo.png" alt="GitHub Logo" class="mr-3">
+                      <p class="card-text mb-0">GitHub</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+              <div class="card h-100 text-center">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                      <img src="bitbucket_logo.png" alt="Bitbucket Logo" class="mr-3">
+                      <p class="card-text mb-0">Bitbucket</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+              <div class="card h-100 text-center">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                      <img src="gitlab_logo.png" alt="GitLab Logo" class="mr-3">
+                      <p class="card-text mb-0">GitLab</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
-<section id="products">
-  <h2>Products that use Daib.ai:</h2>
-  <ul>
-    <li><img src="github_logo.png" alt="GitHub Logo">GitHub</li>
-    <li><img src="bitbucket_logo.png" alt="Bitbucket Logo">Bitbucket</li>
-    <li><img src="gitlab_logo.png" alt="GitLab Logo">GitLab</li>
-  </ul>
+<section id="signup" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center mb-3">Sign up now for a free trial</h2>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <form action="submit.php" method="post">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Get started" class="btn btn-primary btn-block btn-lg">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
-<section id="signup">
-    <h2>Sign up now for a free trial</h2>
-    <form action="submit.php" method="post">
-        <input type="email" name="email" placeholder="Enter your email">
-        <input type="submit" value="Get started">
-    </form>
-</section>
-<footer>
-    <p>Got questions? you can contact our support team at support@daib.ai for assistance.</p>
+<footer class="bg-dark text-white py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Got questions? you can contact our support team at support@daib.ai for assistance.</p>
+            </div>
+        </div>
+    </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper"
+    integrity="sha384-zPAmLmCfOMt545A8cPwMSBB/NJtlbbdoo9XJyqtg7qosYfmYn2+HnJSEORGFSS7w" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0pK"
+    crossorigin="anonymous"></script>
 </body>
 </html>
