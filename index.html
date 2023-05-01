@@ -4,52 +4,131 @@
     <title>Daib.ai - Your Personal AI Code Assistant</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
-    <h1>Welcome to Daib.ai</h1>
-    <p>Your Personal AI Code Assistant</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Daib.ai</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#signup">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
-<section id="features">
-    <h2>Features</h2>
-    <ul>
-        <li>Real-time error detection and reporting</li>
-        <li>Code analysis and optimization</li>
-        <li>Integration with popular IDEs and code editors</li>
-        <li>Web-based interface for remote access</li>
-    </ul>
-</section>
-<section id="reviews">
-  <h2>Reviews</h2>
-  <div class="review">
-    <img src="example_review_1.jpg" alt="Example Review 1" class="round-image">
-    <p>"Daib.ai has been a game-changer for my coding process. The real-time error detection has saved me countless hours of debugging."</p>
-    <p>- John, 5 stars</p>
-  </div>
-  <div class="review">
-    <img src="example_review_2.jpg" alt="Example Review 2" class="round-image">
-    <p>"As a beginner to coding, Daib.ai has been incredibly helpful in optimizing my code and guiding me towards best practices."</p>
-    <p>- Emily, 4 stars</p>
-  </div>
-</section>
-<section id="products">
-  <h2>Products that use Daib.ai:</h2>
-  <ul>
-    <li><img src="github_logo.png" alt="GitHub Logo">GitHub</li>
-    <li><img src="bitbucket_logo.png" alt="Bitbucket Logo">Bitbucket</li>
-    <li><img src="gitlab_logo.png" alt="GitLab Logo">GitLab</li>
-  </ul>
-</section>
-<section id="signup">
-    <h2>Sign up now for a free trial</h2>
-    <form action="submit.php" method="post">
-        <input type="email" name="email" placeholder="Enter your email">
-        <input type="submit" value="Get started">
-    </form>
-</section>
+<main>
+    <section id="hero" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <h1>Welcome to Daib.ai</h1>
+            <p class="lead">Your Personal AI Code Assistant</p>
+            <form action="submit.php" method="post" class="d-flex justify-content-center">
+                <div class="form-group mr-2">
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary">Get started</button>
+            </form>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <h2 class="text-center">Features</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Real-time error detection and reporting</li>
+                        <li>Code analysis and optimization</li>
+                        <li>Integration with popular IDEs and code editors</li>
+                        <li>Web-based interface for remote access</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500x500" alt="Features Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <h2 class="text-center mb-5">Reviews</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="review mb-4 d-flex">
+                        <img src="example_review_1.jpg" alt="Example Review 1" class="round-image">
+                        <div>
+                            <p class="mb-0">"Daib.ai has been a game-changer for my coding process. The real-time error detection has saved me countless hours of debugging."</p>
+                            <p class="font-weight-bold">- John, 5 stars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="review mb-4 d-flex">
+                        <img src="example_review_2.jpg" alt="Example Review 2" class="round-image">
+                        <div>
+                            <p class="mb-0">"As a beginner to coding, Daib.ai has been incredibly helpful in optimizing my code and guiding me towards best practices."</p>
+                            <p class="font-weight-bold">- Emily, 4 stars</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Products that use Daib.ai:</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <a href="#"><img src="github_logo.png" alt="GitHub Logo" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#"><img src="bitbucket_logo.png" alt="Bitbucket Logo" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#"><img src="gitlab_logo.png" alt="GitLab Logo" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="signup">
+        <div class="container">
+            <h2 class="text-center">Sign up now for a free trial</h2>
+            <form action="submit.php" method="post">
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Get started</button>
+            </form>
+        </div>
+    </section>
+</main>
 <footer>
-    <p>Got questions? you can contact our support team at support@daib.ai for assistance.</p>
+    <div class="container pt-5 pb-3">
+        <p class="text-center">Got questions? You can contact our support team at <a href="mailto:support@daib.ai">support@daib.ai</a> for assistance.</p>
+    </div>
 </footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT8rLvH3D6BfB1achOaObdh/aObfPjWRSwZ+jt9QeIKUphKtu6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper-lite" integrity="sha384-EtHYzbAo3q5m5seQJZKWBCI+t9+2fHJFYKmf/JPgCIwC1+7PYcJNfijNjxJp0Z1Y" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
