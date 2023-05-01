@@ -4,52 +4,131 @@
     <title>Daib.ai - Your Personal AI Code Assistant</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Replace the link to the old style sheet with the link to Bootstrap CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<header>
-    <h1>Welcome to Daib.ai</h1>
-    <p>Your Personal AI Code Assistant</p>
+<header class="bg-secondary text-light">
+    <!-- Add Bootstrap container class to center the content of the header -->
+    <div class="container py-3">
+        <!-- Add Bootstrap row class to align the content of the header -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Add Bootstrap display-4 class for a larger font size -->
+                <h1 class="display-4">Welcome to Daib.ai</h1>
+                <!-- Add Bootstrap lead class for larger and gray colored body text -->
+                <p class="lead">Your Personal AI Code Assistant</p>
+            </div>
+        </div>
+    </div>
 </header>
-<section id="features">
-    <h2>Features</h2>
-    <ul>
-        <li>Real-time error detection and reporting</li>
-        <li>Code analysis and optimization</li>
-        <li>Integration with popular IDEs and code editors</li>
-        <li>Web-based interface for remote access</li>
-    </ul>
+<section id="features" class="bg-danger text-light py-5">
+    <!-- Replace the red background color with the danger class of Bootstrap -->
+    <div class="container">
+        <h2 class="text-center mb-5">Features</h2>
+        <!-- Add Bootstrap row class to align the content of the section -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Add Bootstrap list-group class for a more modern and styled list -->
+                <ul class="list-group">
+                    <li class="list-group-item border-0 bg-danger">Real-time error detection and reporting</li>
+                    <li class="list-group-item border-0 bg-danger">Code analysis and optimization</li>
+                    <li class="list-group-item border-0 bg-danger">Integration with popular IDEs and code editors</li>
+                    <li class="list-group-item border-0 bg-danger">Web-based interface for remote access</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <!-- Add a more modern and styled image of a computer -->
+                <img src="https://images.unsplash.com/photo-1523660563342-f4a78e67a4fa" alt="Computer" class="img-fluid">
+            </div>
+        </div>
+    </div>
 </section>
-<section id="reviews">
-  <h2>Reviews</h2>
-  <div class="review">
-    <img src="example_review_1.jpg" alt="Example Review 1" class="round-image">
-    <p>"Daib.ai has been a game-changer for my coding process. The real-time error detection has saved me countless hours of debugging."</p>
-    <p>- John, 5 stars</p>
-  </div>
-  <div class="review">
-    <img src="example_review_2.jpg" alt="Example Review 2" class="round-image">
-    <p>"As a beginner to coding, Daib.ai has been incredibly helpful in optimizing my code and guiding me towards best practices."</p>
-    <p>- Emily, 4 stars</p>
-  </div>
+<section id="reviews" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Reviews</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1469536544028-1ecb97356e07" alt="Example Review 1" class="rounded-circle mb-3">
+                        <!-- Add Bootstrap card-subtitle class for smaller and gray colored text -->
+                        <h5 class="card-title mb-0">John</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">5 stars</h6>
+                        <p class="card-text">"Daib.ai has been a game-changer for my coding process. The real-time error detection has saved me countless hours of debugging."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1470252649378-9c29740a0da9" alt="Example Review 2" class="rounded-circle mb-3">
+                        <h5 class="card-title mb-0">Emily</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">4 stars</h6>
+                        <p class="card-text">"As a beginner to coding, Daib.ai has been incredibly helpful in optimizing my code and guiding me towards best practices."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section id="products">
-  <h2>Products that use Daib.ai:</h2>
-  <ul>
-    <li><img src="github_logo.png" alt="GitHub Logo">GitHub</li>
-    <li><img src="bitbucket_logo.png" alt="Bitbucket Logo">Bitbucket</li>
-    <li><img src="gitlab_logo.png" alt="GitLab Logo">GitLab</li>
-  </ul>
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Products that use Daib.ai:</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <!-- Add a Bootstrap card for each product -->
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="img-fluid mb-3">
+                        <h5 class="card-title">GitHub</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="https://d301sr5gafysq2.cloudfront.net/frontbucket/bb-microsite/assets/bitbucket-logo-dark-blue-181db5ff5e8d455c3fdb5b22fe836e067e226b8c.png" alt="Bitbucket Logo" class="img-fluid mb-3">
+                        <h5 class="card-title">Bitbucket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" alt="GitLab Logo" class="img-fluid mb-3">
+                        <h5 class="card-title">GitLab</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section id="signup">
-    <h2>Sign up now for a free trial</h2>
-    <form action="submit.php" method="post">
-        <input type="email" name="email" placeholder="Enter your email">
-        <input type="submit" value="Get started">
-    </form>
+<section id="signup" class="py-5 bg-secondary text-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Sign up now for a free trial</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form action="submit.php" method="post">
+                    <div class="form-group">
+                        <!-- Add Bootstrap form-control class for styling the input field -->
+                        <input type="email" name="email" placeholder="Enter your email" class="form-control">
+                    </div>
+                    <input type="submit" value="Get started" class="btn btn-primary btn-block">
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
-<footer>
-    <p>Got questions? you can contact our support team at support@daib.ai for assistance.</p>
+<footer class="bg-secondary text-light py-3">
+    <div class="container">
+        <!-- Add Bootstrap text-center class to center the content of the footer -->
+        <p class="text-center mb-0">Got questions? you can contact our support team at support@daib.ai for assistance.</p>
+    </div>
 </footer>
+<!-- Add the Bootstrap script tag and the script tag for the jQuery library -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/esm/popper">
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
