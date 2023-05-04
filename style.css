@@ -1,34 +1,18 @@
 
-body.dark-mode {
-  background-color: #212529;
-  color: #f8f9fa;
+.light-mode {
+  --bg-color: white;
+  --text-color: black;
 }
 
-.dark-mode .bg-light {
-  background-color: #343a40 !important;
+.dark-mode {
+  --bg-color: black;
+  --text-color: white;
 }
 
-.dark-mode .text-white {
-  color: #adb5bd !important;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.dark-theme-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 2rem;
-  color: #212529;
-}
+/* Rest of your CSS */
 
-.dark-theme-toggle:hover {
-  color: #343a40;
-}
-
-.dark-mode .dark-theme-toggle {
-  color: #f8f9fa;
-}
-
-.dark-mode .dark-theme-toggle:hover {
-  color: #adb5bd;
-}
