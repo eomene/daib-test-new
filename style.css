@@ -1,39 +1,37 @@
-#features{
-    background: red;
+
+
+.dark-mode {
+  background-color: #222;
+  color: #ddd;
 }
 
-.review {
-  display: flex;
-  margin: 20px 0;
+.dark-mode header {
+  background-color: #333;
 }
 
-.round-image {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  margin-right: 20px;
+.dark-mode #features {
+  background-color: #444;
 }
 
-#products {
-  background: #f7f7f7;
-  padding: 20px;
+.dark-mode #products {
+  background-color: #333;
 }
 
-#products ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+.dark-mode #signup {
+  background-color: #444;
 }
 
-#products li {
-  display: flex;
-  align-items: center;
-  margin: 10px;
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#products li img {
-  height: 50px;
-  margin-right: 10px;
+.dark-mode-toggle:hover {
+  background: #ccc;
 }
+
