@@ -8,8 +8,9 @@
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
 </head>
-<body class="light-mode">
+<body>
 <header class="bg-light py-3">
     <div class="container">
         <div class="row">
@@ -17,25 +18,18 @@
                 <h1>Welcome to Daib.ai</h1>
                 <p class="lead">Your Personal AI Code Assistant</p>
             </div>
-            <div class="col-md-6 d-flex justify-content-end align-items-center">
-                <form class="form-inline my-2 my-lg-0">
+            <div class="col-md-6">
+                <form class="form-inline my-2 my-lg-0 float-right">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn" type="submit">GO</button>
                 </form>
-                <button class="btn btn-dark ml-3" id="darkModeToggle" type="button">Dark Mode</button>
+                <label class="switch float-right mt-1 mr-3">
+                  <input type="checkbox" onclick="toggleDarkMode()">
+                  <span class="slider round"></span>
+                </label>
             </div>
         </div>
     </div>
 </header>
-<!-- Rest of the page content -->
-
-<!-- bootstrap and custom javascript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script src="app.js"></script>
-
-</body>
-</html>
+... (rest of your HTML code)
 
