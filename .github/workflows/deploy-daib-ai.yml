@@ -1,3 +1,5 @@
+ 
+
 name: Deploy Daib Branches
 
 on:
@@ -15,6 +17,21 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+
+      - name: Reset and clean gh-pages branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global credential.helper store
+          echo "https://$USER:$TOKEN@github.com" > $HOME/.git-credentials
+          git fetch origin
+          git checkout gh-pages || git checkout -b gh-pages
+          git reset --hard origin/main
+          git push -f origin gh-pages
+          git checkout ${{ github.ref_name }}
+        env:
+          USER: "github-actions[bot]"
+          TOKEN: ${{ secrets.PAT }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
